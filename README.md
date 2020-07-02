@@ -14,7 +14,15 @@ library(ProjectTemplate)
 load.project()
 ~~~
 
-in an open R-session. The available datasets from the three studies are `pilot1`, `pilot2` and `stimulation`:
+in an open R-session. It is possible that you will have to run `migrate.project()` the first time you load the datasets like so:
+
+~~~{R}
+library(ProjectTemplate)
+migrate.project()
+load.project()
+~~~
+
+The available datasets from the three studies are `pilot1`, `pilot2` and `stimulation`:
 
 ~~~{R}
 > str(pilot1)
